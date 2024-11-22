@@ -34,7 +34,7 @@ function Contact() {
  initial={rightanimationinitial}
  animate={rightanimation}
  transition={transition}
->Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatem cupiditate accusamus minima aliquid animi corrupti quisquam officiis at natus, nam expedita quis quaerat eveniet nulla enim earum est quod.</motion.p>
+>Whether you're aiming to innovate or build impactful solutions, Uncovering Stars is here to empower you with resources, guidance, and a vibrant community to help you thrive and make a difference in the modern world.</motion.p>
     </div>
     <section className="contactsection1">
         <motion.img
@@ -50,7 +50,7 @@ function Contact() {
          viewport={viewport}
         className="des">
             <h1>Leave us a Message</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error asperiores, est in quibusdam beatae pariatur corrupti porro eum adipisci? Soluta nulla nihil sequi porro nesciunt ea eum aliquam et quis veniam?</p>
+            <p>Our team at Uncovering Stars is excited to learn about your aspirations. Connect with us today, and let’s discover how we can empower you to innovate, achieve your goals, and create lasting impact in your journey.</p>
             <form onSubmit={(e)=>{e.preventDefault()}}>
                 <input type="email" placeholder='Email' />
                 <input type="text" placeholder='Name' />
