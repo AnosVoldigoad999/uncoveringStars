@@ -1,0 +1,76 @@
+.contact .banner{
+    background-image: url(../../public/contactusbanner.jpg);
+    
+}
+
+.contact .banner::after{
+    background-color: var(--darker-special-black);
+}
+
+.contactsection1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 650px;
+    padding: 5%;
+}
+
+.contactsection1 img{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contactsection1 .des{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.contactsection1 form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactsection1 form input, .contactsection1 form textarea{
+    border-bottom: 2px solid grey;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.contactsection1 .des span{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contactsection1 .des span .icon{
+    margin-left: 5px;
+}
+
+@media(max-width:700px){
+    .contactsection1{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .contactsection1 img{
+        width: 100%;
+        height: 300px;
+    }
+
+    .contactsection1 .des{
+        width: 100%;
+    }
+
+    .contactsection1 form{
+        margin-top: 70px;
+    }
+
+    .contactsection1 form input::placeholder,  .contactsection1 form textarea::placeholder{
+        font-size: 3.5vw;
+    }
+
+}

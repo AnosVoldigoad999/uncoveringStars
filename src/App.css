@@ -1,0 +1,142 @@
+*{
+  box-sizing: border-box;
+  font-family: DM_sans;
+  margin: 0;
+}
+
+:root{
+  --lighter-special-black: hsla(0, 0%, 0%, 0.05) ;
+  --special-black: hsla(0, 0%, 0%, 0.2) ;
+  --darker-special-black: hsla(0, 0%, 0%, 0.5) ;
+}
+
+@font-face {
+  font-family: DM_sans;
+  src: url(../public/DM_SANS/DMSans-VariableFont.ttf);
+}
+
+body{
+  font-family: DM_sans;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.navcontainer{
+  padding: 0 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: max(7vw, 95px);
+  z-index: 1;
+}
+nav{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid white;
+  position: relative;
+}
+
+nav .logo{
+  position: absolute;
+  color: black;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  top: 20%;
+}
+
+nav ul{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+nav ul li{
+  list-style: none;
+  margin-right: 25px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  transition: all 0.2s;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+nav ul li:hover{
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+nav .icon{
+  position: absolute;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  color: white;
+  display: none;
+}
+
+main{
+  height: fit-content;
+  position: relative;
+  overflow-x: hidden;
+}
+.link{
+  text-decoration: none;
+}
+
+.mobilemenu{
+  position: fixed;
+  background-color: white;
+  z-index: 10;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  padding: 0 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobilemenu .icon{
+  position: absolute;
+  width: 50px;
+  height: 50px ;
+  top: 50px;
+  right: 50px;
+}
+
+.mobilemenu ul {
+  padding: 0;
+}
+
+.mobilemenu ul li{
+  margin-bottom: 20px;
+  font-size: 5vw;
+  list-style: none;
+  color: black;
+}
+
+
+
+@media (max-width:500px){
+  nav ul{
+    display: none;
+  }
+  nav .icon{
+    display: block;
+  }
+}

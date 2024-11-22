@@ -1,0 +1,97 @@
+.about .banner{
+    background-image: url(../../public/aboutusbanner.jpg);
+    align-items: start;
+    padding: 0 10%;
+}
+
+.banner p{
+    color: white;
+    z-index: 1;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+
+.about .banner h1{
+   text-align: center;
+}
+
+.aboutsection1{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.aboutsection1 .des{
+    width: 40%;
+}
+
+.aboutsection1 img {
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+}
+
+.aboutsection2{
+    padding: 5%;
+}
+
+.aboutsection3{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+
+.aboutsection3 div{
+    width: 40%;
+}
+
+.aboutsection4{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.aboutsection4 .des{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.aboutsection4 .des div{
+    width: 30%;
+}
+
+@media(max-width:700px){
+    .banner p{
+        font-size: 4.5vw;        
+    }
+    .banner h1{
+        text-align: center;
+    }
+    .about section{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .aboutsection1 img{
+        width: 100%;
+    }
+    .aboutsection1 .des{
+        width: 100%;
+    }
+
+    .aboutsection3 div{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .aboutsection4 .des{
+        flex-direction: column;
+    }
+
+    .aboutsection4 .des div{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+}
